@@ -23,12 +23,7 @@ const book1 = new Book(
   true
 );
 
-const book2 = new Book(
-  "The Game of Thrones",
-  "George R.R. Martin",
-  694,
-  false
-);
+const book2 = new Book("The Game of Thrones", "George R.R. Martin", 694, false);
 
 const library = new Library();
 
