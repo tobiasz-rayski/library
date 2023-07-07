@@ -41,7 +41,7 @@ class Library {
 }
 
 class Book {
-  static idCounter = 0;
+  static idCounter = 1;
 
   constructor(title, author, pages, read) {
     this.title = title;
@@ -51,6 +51,12 @@ class Book {
     this.idNum = Book.idCounter++;
   }
 }
+
+const modalPop = () => {};
+
+const addButton = document.getElementById("add");
+
+addButton.addEventListener("click", modalPop());
 
 const book1 = new Book(
   "Harry Potter and The Philosopher's Stone",
@@ -65,6 +71,4 @@ const library = new Library();
 
 library.bookArray.push(book1);
 library.bookArray.push(book2);
-
 library.renderCards();
-// ---
