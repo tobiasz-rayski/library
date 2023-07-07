@@ -8,7 +8,7 @@ class Book {
   static idCounter = 0;
 
   constructor(title, author, pages, read) {
-    this._title = title;
+    this.title = title;
     this.author = author;
     this.pages = pages;
     this.read = read;
@@ -17,7 +17,7 @@ class Book {
 }
 
 const book1 = new Book(
-  "Harry Potter and The Philosophers Stone",
+  "Harry Potter and The Philosopher's Stone",
   "J. K. Rowling",
   223,
   true
@@ -30,5 +30,8 @@ const book2 = new Book(
   false
 );
 
-console.log(book1);
-console.log(book2);
+const library = new Library();
+
+library.bookArray.push(book1);
+
+console.log(library);

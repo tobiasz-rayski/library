@@ -3,9 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -16,56 +26,6 @@
     <title></title>
   </head>
   <body>
-    <div id="wrapper">
-      <div id="modal" class="modal">
-        <div id="modal-cont" class="modal-content">
-          <form id="add-book-form" class="add-book-form">
-            <input
-              type="text"
-              id="book-title"
-              name="book_title"
-              placeholder="Title"
-              autocomplete="off"
-            />
-
-            <input
-              type="text"
-              id="book-author"
-              name="book_author"
-              placeholder="Author"
-              autocomplete="off"
-            />
-
-            <input
-              type="number"
-              id="book-pages"
-              name="book_pages"
-              placeholder="Pages"
-              autocomplete="off"
-            />
-            <div class="radio-options">
-              <label for="book-read">Have you read it?</label>
-              <input
-                type="checkbox"
-                name="read-check"
-                id="checkbox"
-                value="false"
-              />
-            </div>
-            <label for="book-genre">Genre</label>
-            <select name="Book">
-              <optgroup label="Group One"></optgroup>
-              <option value="fiction" id="book-genre">Fiction</option>
-              <option value="thriller" id="book-genre">Thriller</option>
-              <optgroup label="Group Two"></optgroup>
-              <option value="sci-fi" id="book-genre" selected>Sci-Fi</option>
-              <option value="Romance" id="book-genre">Romance</option>
-            </select>
-            <button type="button" id="addButton">Add</button>
-          </form>
-          <div id="close-modal" class="close-modal">&times;</div>
-        </div>
-      </div>
-    </div>
+    <div id="wrapper"></div>
   </body>
 </html>
