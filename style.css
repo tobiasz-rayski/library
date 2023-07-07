@@ -1,3 +1,11 @@
+:root {
+  --neutral-grey: #ebf4f5;
+  --primary: #b5c6e0;
+  --secondary: ##0050b6;
+  --font: #121416;
+  --accent: #c1a875;
+}
+
 * {
   box-sizing: border-box;
 }
