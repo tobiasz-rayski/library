@@ -131,7 +131,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: var(--neutral-grey);
-  margin: 30% auto;
+  margin: 4rem auto;
   padding: 3rem;
   width: fit-content;
   height: fit-content;
@@ -146,6 +146,7 @@ form {
 }
 
 input {
+  line-height: 1.1;
   font-family: inherit;
   font-size: 1.25rem;
   border-radius: 2rem;
@@ -167,12 +168,59 @@ input:focus {
 }
 
 .checkbox-label {
-  margin-top: 2rem;
-  font-family: system-ui, sans-serif;
+  color: #81868d;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+.checkbox-input {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-input:checked {
+  background-color: #cad4e0;
+}
+
+.checkbox-input:checked:after {
+  display: block;
+}
+
+.checkbox-input:after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
   font-size: 1.25rem;
-  font-weight: bold;
-  line-height: 1.1;
-  display: grid;
-  grid-template-columns: 1em auto;
-  gap: 0.5em;
+  content: "\f00c";
+  color: #1165d3;
+  display: none;
+}
+
+.checkbox-input:hover {
+  background-color: #b5c6e0;
+}
+
+.checkbox-input:focus {
+  background-color: none;
+  color: none;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 3px solid #b5c6e0;
+  border-radius: 2rem;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  width: 100%;
 }
