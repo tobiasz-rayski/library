@@ -52,11 +52,27 @@ class Book {
   }
 }
 
-const modalPop = () => {};
-
 const addButton = document.getElementById("add");
+const modal = document.getElementById("modal");
+const closeButton = document.getElementById("modal-close");
 
-addButton.addEventListener("click", modalPop());
+const showModal = () => {
+  modal.style.display = "block";
+};
+
+const hideModal = () => {
+  modal.style.display = "none";
+};
+
+addButton.addEventListener("click", showModal);
+
+closeButton.addEventListener("click", hideModal);
+
+modal.addEventListener("click", function (e) {
+  if (e.target === modal) {
+    hideModal();
+  }
+});
 
 const book1 = new Book(
   "Harry Potter and The Philosopher's Stone",
